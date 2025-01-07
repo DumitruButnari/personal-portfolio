@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');*/
  * {
      margin: 0;
      padding: 0;
@@ -67,6 +67,27 @@ section {
     color: var(--text-color);
     display: none;
 }
+
+.coming-soon {
+    position: fixed;
+    bottom: 80px;
+    right: 0;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 2rem;
+    font-weight: 700;
+    background: #00eeff70;
+    padding: 16px 32px;
+    border-radius: 80px 0 0 80px;
+    z-index: 1000;
+    @media screen and (max-width: 768px) {
+        padding: 12px 24px;
+        font-weight: 500;
+        font-size: 1.5rem;
+
+    }
+}
+
 
 .home {
     display: flex;
@@ -419,6 +440,9 @@ span{
     .footer {
         padding: 2rem 3%;
     }
+    .services h2, .portfolio h2, .contact h2 {
+        margin-top: 1rem;
+    }
 }
 
 @media (max-width: 768px ){
@@ -504,6 +528,11 @@ span{
     .portfolio-container {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    section {
+        min-height: 80vh;
+    }
+
 }
 
 @media (max-width: 617px) {
@@ -520,7 +549,7 @@ span{
         width: 100%;
     }
     .home-img img {
-        width: 80vw;
+        width: 60vw;
     }
     footer {
         flex-direction: column-reverse;
