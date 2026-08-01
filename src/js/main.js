@@ -1,3 +1,6 @@
+import Typed from 'typed.js';
+import ScrollReveal from 'scrollreveal';
+
 const menuIcon = document.querySelector('#menu-icon');
 const navbar = document.querySelector('.navbar');
 
@@ -36,9 +39,9 @@ menuIcon.onclick = () => {
 
 ScrollReveal({
   reset: true,
-  distance: '80px',
+  distance: '200px',
   duration: 2000,
-  delay: 200,
+  delay: 100,
 });
 
 ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
@@ -53,8 +56,8 @@ ScrollReveal().reveal(
 
 // typed js
 
-const typed = new Typed('.multiple-text', {
-  strings: ['Frontend Developer', 'Software Engineer'],
+new Typed('.multiple-text', {
+  strings: ['Product Manager', 'Tech Lead', 'Business Analyst'],
   typeSpeed: 100,
   backSpeed: 100,
   backDelay: 1000,

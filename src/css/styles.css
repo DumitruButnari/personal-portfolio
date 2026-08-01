@@ -17,6 +17,18 @@
     --main-color: #0ef;
 }
 
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -114,10 +126,12 @@ span{
 }
 
 .home-img img {
-    width: 30vw;
+    width: 22vw;
     border-radius: 50%;
+    background: #1f242d;
     box-shadow: 0 0 7rem var(--main-color);
     animation: floatImage 4s ease-in-out infinite;
+    object-fit: cover;
 }
 
 @keyframes floatImage {
